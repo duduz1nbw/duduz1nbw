@@ -15,6 +15,21 @@
         nav a:hover { background: #8e44ad; }
         .social-link { display: block; margin-top: 20px; color: #ff0050; font-weight: bold; font-size: 1.2em; }
         @media (max-width: 600px) { nav { display: flex; flex-direction: column; } nav a { margin: 10px 0; } }
+        @keyframes fadeInUp {
+              from {
+                    opacity: 0;
+                        transform: translateY(20px);
+                    }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+  }
+}
+
+body {
+  animation: fadeInUp 0.5s ease-out;
+}
+
     </style>
 </head>
 <body>
@@ -23,7 +38,7 @@
         <h1>Duduz1n</h1>
         <p class="bio">Um cara muito fã de PvP 1.8.9, Criar conteúdo no TikTok, e ser um pequeno desenvolvedor de python e html (css e um pouco de js também). Seja bem-vindo ao meu canto na web!</p>
         <nav>
-            <a href="index.html">Início</a>
+            <a href="index">Início</a>
             <a href="texturas">Texturas</a>
             <a href="https://www.tiktok.com/@duduz1n.bw" target="_blank">Meu TikTok</a>
         </nav>
