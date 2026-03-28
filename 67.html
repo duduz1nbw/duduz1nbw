@@ -2,28 +2,78 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Erro 67</title>
+    <title>Erro 67 - Atualizado</title>
     <style>
-        body { 
-            background: black; 
-            color: red; 
-            text-align: center; 
-            font-family: 'Courier New', monospace; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            margin: 0; 
-            cursor: pointer;
+        body {
+            background: black;
+            color: red;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        h1 { font-size: 80px; text-shadow: 0 0 20px red; }
-        p { color: white; font-size: 18px; }
+        h1 {
+            font-size: 80px;
+            text-shadow: 0 0 20px red;
+            margin-bottom: 20px;
+        }
+        .search-container {
+            margin-bottom: 30px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid red;
+            background: #111;
+            color: white;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: red;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: darkred;
+            color: white;
+        }
+        .back-link {
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .back-link:hover {
+            color: red;
+            text-shadow: 0 0 10px red;
+        }
     </style>
 </head>
-<body onclick="tocar()">
+<body>
 
-    <h1 id="status">erro 67</h1>
+    <h1 id="status" onclick="tocar()">erro 67</h1>
+
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="Pesquisar imagens...">
+            <input type="hidden" name="tbm" value="isch">
+            <button type="submit">Pesquisar</button>
+        </form>
+    </div>
+
+    <a href="https://duduz1nbw.github.io/duduz1nbw/index" class="back-link">
+        🏠 Voltar para o início
+    </a>
 
     <audio id="musica" loop>
         <source src="musica.mp3" type="audio/mpeg">
@@ -33,10 +83,8 @@
         function tocar() {
             var audio = document.getElementById("musica");
             audio.play();
-            document.getElementById("msg").style.display = "none";
             document.getElementById("status").innerText = "erro 67";
         }
     </script>
-
 </body>
 </html>
