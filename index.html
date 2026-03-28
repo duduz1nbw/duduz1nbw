@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duduz1n | PvP e Dev</title>
+    <title>Duduz1n | Início</title>
     <style>
         body {
             background-color: #0f0f0f;
             color: #e0e0e0;
-            font-family: 'Inter', sans-serif;
-            text-align: center;
+            font-family: Arial, sans-serif;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -18,18 +17,17 @@
         }
 
         .container {
-            padding: 50px 20px;
-            max-width: 600px;
-            animation: fadeIn 1s ease-out;
+            text-align: center;
+            max-width: 500px;
+            padding: 20px;
         }
 
-        /* Foto de Perfil com efeito de aumentar */
+        /* Foto de Perfil - Aumenta ao passar o mouse */
         .perfil-img {
-            width: 150px;
-            height: 150px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             border: 3px solid #8e44ad;
-            box-shadow: 0 0 20px #8e44ad;
             transition: transform 0.3s ease;
         }
 
@@ -37,53 +35,37 @@
             transform: scale(1.1);
         }
 
-        /* Nome Duduz1n com efeito */
         h1 {
             color: #8e44ad;
-            margin-top: 20px;
             transition: transform 0.3s ease;
-            display: inline-block;
         }
 
         h1:hover {
             transform: scale(1.05);
         }
 
-        .bio {
-            max-width: 500px;
-            margin: 20px auto;
-            line-height: 1.6;
-            font-size: 1.1em;
-        }
-
-        nav {
-            margin-top: 30px;
+        .links {
+            margin-top: 25px;
             display: flex;
-            justify-content: center;
             gap: 15px;
+            justify-content: center;
         }
 
-        /* Botões Início, Texturas e TikTok com efeito de subir e ficar roxo */
-        nav a {
-            color: #fff;
+        /* Botões - Sobem ao passar o mouse */
+        .btn {
+            display: inline-block;
             text-decoration: none;
-            padding: 10px 20px;
+            color: white;
             border: 1px solid #8e44ad;
-            border-radius: 5px;
+            padding: 10px 20px;
+            border-radius: 8px;
             font-weight: bold;
             transition: all 0.3s ease;
-            display: inline-block;
         }
 
-        nav a:hover {
+        .btn:hover {
             background-color: #8e44ad;
-            transform: translateY(-5px); /* Efeito de subir que você pediu */
-            box-shadow: 0 5px 15px rgba(142, 68, 173, 0.4);
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            transform: translateY(-5px); /* Efeito de "pular" */
         }
     </style>
 </head>
@@ -91,14 +73,13 @@
     <div class="container">
         <img src="foto-perfil.jpg" alt="Duduz1n" class="perfil-img">
         <h1>Duduz1n</h1>
-        <p class="bio">
-            Um cara muito fã de PvP 1.8.9, criar conteúdo no TikTok, e ser um pequeno desenvolvedor de Python e HTML (CSS e um pouco de JS também). Seja bem-vindo ao meu canto na web!
-        </p>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="texturas.html">Texturas</a>
-            <a href="https://www.tiktok.com/@duduz1n.bw" target="_blank">Meu TikTok</a>
-        </nav>
+        <p>Desenvolvedor Python/HTML e fã de Minecraft PvP.</p>
+        
+        <div class="links">
+            <a href="index.html" class="btn">Início</a>
+            <a href="texturas.html" class="btn">Texturas</a>
+            <a href="https://www.tiktok.com/@duduz1n.bw" target="_blank" class="btn">TikTok</a>
+        </div>
     </div>
 </body>
 </html>
