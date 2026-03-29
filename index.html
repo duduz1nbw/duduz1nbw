@@ -10,48 +10,36 @@
             color: #e0e0e0;
             font-family: Arial, sans-serif;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            text-align: center;
+            padding-top: 50px; /* Dá um respiro no topo */
         }
 
         .container {
-            text-align: center;
-            max-width: 500px;
+            max-width: 600px;
+            margin: 0 auto;
             padding: 20px;
         }
 
-        /* Foto de Perfil - Aumenta ao passar o mouse */
         .perfil-img {
             width: 140px;
             height: 140px;
             border-radius: 50%;
             border: 3px solid #8e44ad;
-            transition: transform 0.3s ease;
-        }
-
-        .perfil-img:hover {
-            transform: scale(1.1);
         }
 
         h1 {
             color: #8e44ad;
-            transition: transform 0.3s ease;
         }
 
-        h1:hover {
-            transform: scale(1.05);
-        }
-
-        .links {
+        .nav {
             margin-top: 25px;
+            margin-bottom: 40px; /* Espaço para os vídeos não colarem nos botões */
             display: flex;
             gap: 15px;
             justify-content: center;
+            flex-wrap: wrap; /* Para os botões não quebrarem em telas pequenas */
         }
 
-        /* Botões - Sobem ao passar o mouse */
         .btn {
             display: inline-block;
             text-decoration: none;
@@ -60,35 +48,37 @@
             padding: 10px 20px;
             border-radius: 8px;
             font-weight: bold;
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
 
         .btn:hover {
             background-color: #8e44ad;
-            transform: translateY(-5px); /* Efeito de "pular" */
         }
-        /* Garante que os vídeos fiquem alinhados e não quebrem o layout */
-blockquote {
-    margin: 10px auto !important;
-    display: inline-block !important;
-    vertical-align: top;
-}
 
+        /* Ajuste para o widget do Elfsight */
+        .elfsight-app-13840c64-637a-4f1c-8387-1f46577cd385 {
+            margin: 20px auto;
+            max-width: 90%;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
         <img src="foto-perfil.jpg" alt="Duduz1n" class="perfil-img">
         <h1>Duduz1n</h1>
         <p>Um cara muito fã de pvp 1.8.9, Criar conteudo no tiktok, e ser um pequeno desenvolvedor de python e html (css e um pouco de js tambem)</p>
         
         <div class="nav">
-    <a href="index.html" class="btn">Início</a>
-    <a href="texturas.html" class="btn">Texturas</a>
-    <a href="livepix.html" class="btn">LivePix</a> <a href="https://www.tiktok.com/@duduz1n.bw" target="_blank" class="btn">Meu TikTok</a>
-</div>
+            <a href="index.html" class="btn">Início</a>
+            <a href="texturas.html" class="btn">Texturas</a>
+            <a href="livepix.html" target="_blank" class="btn">LivePix</a> 
+            <a href="https://www.tiktok.com/@duduz1n.bw" target="_blank" class="btn">Meu TikTok</a>
+        </div>
     </div>
-    <!-- Elfsight TikTok Feed | Untitled TikTok Feed --> <script src="https://elfsightcdn.com/platform.js" async></script> <div class="elfsight-app-13840c64-637a-4f1c-8387-1f46577cd385" data-elfsight-app-lazy></div>
-</body>
+
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-13840c64-637a-4f1c-8387-1f46577cd385" data-elfsight-app-lazy></div>
+
 </body>
 </html>
